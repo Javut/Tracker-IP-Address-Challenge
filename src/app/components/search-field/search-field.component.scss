@@ -1,6 +1,6 @@
+@import "../../../styles.scss";
 
-
-$fieldHeight: 4rem;
+$inputHeight: 4rem;
 
 form {
   display: flex;
@@ -12,7 +12,7 @@ form {
 input {
   width: 50%;
   max-width: 550px;
-  height: $fieldHeight;
+  height: $inputHeight;
   font-size: 1.1rem;
   border: none;
   border-radius: 14px 0 0 14px;
@@ -29,3 +29,35 @@ input {
   }
 }
 
+input:focus, button:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: $lightGray;
+}
+
+button {
+  cursor: pointer;
+  background-color: #000000;
+  height: $inputHeight;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 0 14px 14px 0;
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  -ms-border-radius: 0 14px 14px 0;
+  -o-border-radius: 0 14px 14px 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+
+  &:hover {
+    background-color: $darkGray;
+  }
+}
