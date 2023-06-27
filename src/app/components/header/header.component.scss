@@ -1,0 +1,27 @@
+.header-wrapper {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../../../assets/images/pattern-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.3rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+app-search-field {
+  margin: 3rem auto;
+  text-align: center;
+  width: 100%;
+
+  @media (max-width: 750px) {
+    margin: 2rem auto 1.2rem;
+  }
+}
